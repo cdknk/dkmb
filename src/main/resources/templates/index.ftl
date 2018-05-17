@@ -174,9 +174,22 @@ option{
 	<script>
 		$(function(){
 			$('#title').click(function(){
-				alert('点击成功');
+				//alert('点击成功');
+				$.ajax({
+					url:"http://localhost:8081/api/get",
+					type:"POST",
+					date:{
+						name:"一入江湖数十崔 "
+					},
+					success:function(data,status,xhr){
+						console.log(data);
+						alert(data.name);
+					}
+				});
 			});
 		})
+		
+		
 	</script>
 	
 	<center>

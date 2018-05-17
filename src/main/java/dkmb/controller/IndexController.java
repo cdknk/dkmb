@@ -21,11 +21,6 @@ public class IndexController {
 	private int number;
 	@Value("${roncoo.desc}")
 	private String desc;
-//
-//	@RequestMapping()
-//	String indexdf() {
-//		return "我在人民廣場吃著炸雞dsadasdasdaddsadasad jhhhhhhhhhhhfhttrhtrhyrtyh grfgfsg !";
-//	}
 
 	@RequestMapping("/home")
 	public String home() {

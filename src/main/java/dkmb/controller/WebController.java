@@ -14,9 +14,16 @@ public class WebController {
 	
 	@RequestMapping("index")
 	public String index(ModelMap map){
-		logger.info("这里是首页controller");
+		logger.info("这里是首页");
 		map.put("title", "還有什麼能夠阻擋");
 		return "index";
+	}
+	
+	@RequestMapping("filesUpload")
+	public String filesUpload(ModelMap map){
+		logger.info("这里是文件上传");
+		map.put("title", "世人叫我太疯癫");
+		return "filesUpload";
 	}
 	
 	@RequestMapping("error")
